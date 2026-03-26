@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Safwan Ahmed — Architect · Photographer · Creator</title>
-<link rel = "icon" type="image/png" sizes="32*32" href="ChatGPT_Image_Mar_24__2026__01_19_17_AM-removebg-preview.png">
-<link rel = "shortcut icon" type="image/png" sizes="16*16" href="ChatGPT_Image_Mar_24__2026__01_19_17_AM-removebg-preview.png">
-<link rel = "apple-touch-icon" sizes="180*180" href="ChatGPT_Image_Mar_24__2026__01_19_17_AM-removebg-preview.png">
+<link rel="icon" type="image/png" sizes="32x32" href="ChatGPT_Image_Mar_24__2026__01_19_17_AM-removebg-preview.png">
+<link rel="shortcut icon" type="image/png" sizes="16x16" href="ChatGPT_Image_Mar_24__2026__01_19_17_AM-removebg-preview.png">
+<link rel="apple-touch-icon" sizes="180x180" href="ChatGPT_Image_Mar_24__2026__01_19_17_AM-removebg-preview.png">
 <style>
 /* ════════════════════════════════════════
    TOKENS
@@ -44,7 +44,7 @@
   --cont-bg:linear-gradient(135deg,#F5EEF2 0%,#F0E8EE 50%,#F8F2F5 100%);
   --about-bg:#18243A;
 }
- 
+
 /* ════════════ RESET ════════════════════ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;overflow-x:hidden;font-size:16px}
@@ -53,7 +53,6 @@ body{
   overflow-x:hidden;-webkit-font-smoothing:antialiased;
   transition:background .5s,color .5s;
 }
-/* Only custom cursor on real pointer devices */
 @media(pointer:fine){
   body{cursor:none}
   a,button{cursor:none}
@@ -85,9 +84,7 @@ img,video{display:block;max-width:100%}
   display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem .8rem;margin-top:1.4rem;
   opacity:0;animation:fadeSlide .6s .55s ease forwards;padding:0 1rem;
 }
-.pre-tagline span{
-  font-size:.5rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink3);
-}
+.pre-tagline span{font-size:.5rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink3)}
 .pre-tagline span:nth-child(1){color:var(--gold)}
 .pre-tagline span:nth-child(3){color:var(--teal)}
 .pre-tagline span:nth-child(5){color:var(--rose)}
@@ -110,7 +107,7 @@ img,video{display:block;max-width:100%}
   to{opacity:1;transform:none}
 }
 
-/* ════════════ CURSOR (pointer devices only) ════ */
+/* ════════════ CURSOR ════════════════════ */
 #cur-dot,#cur-ring{display:none}
 @media(pointer:fine){
   #cur-dot{
@@ -146,8 +143,6 @@ img,video{display:block;max-width:100%}
   color:var(--ink);text-decoration:none;transition:color .3s;z-index:2;
 }
 .nav-logo:hover{color:var(--gold)}
-
-/* Desktop tabs */
 .nav-tabs{
   position:absolute;left:50%;transform:translateX(-50%);
   display:flex;gap:0;
@@ -163,8 +158,6 @@ img,video{display:block;max-width:100%}
 .nav-tab.a-on,.nav-tab.a:hover{background:var(--gold);color:#111009}
 .nav-tab.p-on,.nav-tab.p:hover{background:var(--teal);color:#091210}
 .nav-tab.c-on,.nav-tab.c:hover{background:var(--rose);color:#140A10}
-
-/* Mobile hamburger */
 .nav-hamburger{
   display:none;flex-direction:column;justify-content:center;gap:5px;
   width:34px;height:34px;background:transparent;border:none;padding:4px;z-index:2;
@@ -180,8 +173,6 @@ img,video{display:block;max-width:100%}
 .nav-hamburger.open span:nth-child(1){transform:rotate(40deg) translateY(-1px);width:22px}
 .nav-hamburger.open span:nth-child(2){opacity:0;width:0}
 .nav-hamburger.open span:nth-child(3){transform:rotate(-40deg) translateY(1px);width:22px}
-
-/* Mobile drawer */
 .nav-drawer{
   position:fixed;inset:0;z-index:590;
   background:var(--glass);backdrop-filter:blur(32px);-webkit-backdrop-filter:blur(32px);
@@ -199,7 +190,6 @@ img,video{display:block;max-width:100%}
 .nav-drawer a:nth-child(3)::before{content:'';display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--rose)}
 .nav-drawer a:nth-child(4)::before,.nav-drawer a:nth-child(5)::before{content:'';display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ink3)}
 .nav-drawer a:hover{color:var(--gold)}
-
 .nav-right{display:flex;align-items:center;gap:1.4rem}
 .nav-links{display:flex;gap:1.4rem}
 .nav-links a{
@@ -235,7 +225,6 @@ img,video{display:block;max-width:100%}
   animation:ambientPulse 8s ease-in-out infinite alternate;
 }
 @keyframes ambientPulse{0%{opacity:.7;transform:scale(1)}100%{opacity:1;transform:scale(1.06)}}
-
 .hero-text{
   display:flex;flex-direction:column;justify-content:flex-end;
   padding:8rem 4rem 5rem;position:relative;z-index:2;
@@ -312,8 +301,6 @@ img,video{display:block;max-width:100%}
 }
 @keyframes scrollTick{0%{top:-100%}100%{top:100%}}
 .h-scroll-label{writing-mode:vertical-rl;font-size:.44rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink3)}
-
-/* hero photo */
 .hero-photo{position:relative;overflow:hidden;background:var(--bg3);opacity:0;animation:fadeIn 1.5s .4s ease forwards}
 @keyframes fadeIn{to{opacity:1}}
 .hero-photo::before{
@@ -363,7 +350,6 @@ img,video{display:block;max-width:100%}
 .sec-arch{background:var(--arch-bg)}
 .sec-phot{background:var(--phot-bg)}
 .sec-cont{background:var(--cont-bg)}
-
 .sec-head{
   display:flex;justify-content:space-between;align-items:flex-end;
   margin-bottom:4rem;padding-bottom:1.2rem;
@@ -386,7 +372,6 @@ img,video{display:block;max-width:100%}
 .slider-wrap{overflow:hidden;width:100%}
 .slider-track{display:flex;transition:transform 1s var(--ease2);will-change:transform}
 .slide{min-width:100%;display:grid;grid-template-columns:55fr 45fr;gap:4rem;align-items:center;padding:2rem 0}
-
 .gbox{position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;background:var(--bg4)}
 .gbox::after{
   content:'';position:absolute;top:0;left:0;width:40px;height:40px;z-index:3;pointer-events:none;
@@ -420,10 +405,7 @@ img,video{display:block;max-width:100%}
 .g-upload input{position:absolute;inset:0;opacity:0;cursor:pointer}
 .gu-ico{font-size:1.2rem;color:var(--ink3)}
 .gu-txt{font-size:.42rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3)}
-
-/* Touch nav arrows — always visible on touch devices */
 @media(hover:none){.g-nav{opacity:1;pointer-events:auto}}
-
 .si{padding:.5rem 0}
 .si-num{font-family:var(--f1);font-size:4.5rem;font-weight:300;line-height:1;color:var(--gold);opacity:.14;margin-bottom:.3rem;user-select:none}
 .si-cat{font-size:.46rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:.6rem}
@@ -522,7 +504,7 @@ img,video{display:block;max-width:100%}
 .pu2-ico{font-size:.9rem;color:var(--ink3)}
 .pu2-txt{font-size:.38rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
 
-/* lightbox */
+/* ── LIGHTBOX (single unified system) ── */
 #lb{
   position:fixed;inset:0;z-index:8000;background:rgba(6,5,3,.97);backdrop-filter:blur(24px);
   display:flex;align-items:center;justify-content:center;
@@ -542,7 +524,7 @@ img,video{display:block;max-width:100%}
 }
 #lb-close:hover{background:var(--teal)}
 
-/* strip */
+/* ── PHOTO STRIP ── */
 .strip-head{
   font-size:.46rem;letter-spacing:.25em;text-transform:uppercase;color:var(--teal2);margin-bottom:.8rem;
   display:flex;align-items:center;gap:.5rem;
@@ -681,7 +663,6 @@ footer{
   .nav-tabs{display:none}
   .nav-links{display:none}
   .nav-hamburger{display:flex}
-
   .hero{grid-template-columns:1fr;min-height:auto}
   .hero-text{padding:5.5rem 1.5rem 3rem;justify-content:flex-start;padding-top:6rem}
   .hero-photo{height:75vw;max-height:520px}
@@ -692,24 +673,14 @@ footer{
   .hero-ambient{display:none}
   .h-scroll{display:none}
   .h-bio{max-width:100%}
-
   .sec-inner{padding:4.5rem 1.5rem}
   .sec-head{flex-direction:column;align-items:flex-start;gap:1rem;margin-bottom:2.5rem}
   .sec-desc{text-align:left;max-width:100%}
-
   .slide{grid-template-columns:1fr;gap:1.8rem;padding:1.2rem 0}
   .gbox{aspect-ratio:16/9}
-
   .about-band{grid-template-columns:1fr;padding:4.5rem 1.5rem;gap:3rem}
-
-  /* photo grid — 2 equal cols on tablet */
-  .photo-grid{
-    grid-template-columns:1fr 1fr;grid-auto-rows:140px;gap:3px;
-  }
-  .c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11{
-    grid-column:unset!important;grid-row:unset!important;
-  }
-
+  .photo-grid{grid-template-columns:1fr 1fr;grid-auto-rows:140px;gap:3px}
+  .c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11{grid-column:unset!important;grid-row:unset!important}
   .cc-grid{grid-template-columns:1fr}
   .cc.feat{grid-row:unset;min-height:280px}
   .plat-grid{grid-template-columns:1fr 1fr}
@@ -723,8 +694,6 @@ footer{
 ════════════════════════════════════════ */
 @media(max-width:640px){
   #nav{padding:.9rem 1.2rem}
-
-  /* Hero */
   .hero{grid-template-columns:1fr}
   .hero-text{padding:4.5rem 1.2rem 2.5rem}
   .hero-photo{height:80vw;max-height:360px}
@@ -734,44 +703,27 @@ footer{
   .h-btns{flex-direction:column;align-items:flex-start;gap:.75rem}
   .btn-primary{padding:.78rem 1.5rem}
   .h-badge{font-size:.38rem;padding:.3rem .6rem;bottom:.8rem;right:.8rem}
-
-  /* Sections */
   .sec-inner{padding:3.5rem 1.2rem}
   .sec-title{font-size:clamp(1.8rem,7vw,2.5rem)}
   .sec-head{margin-bottom:2rem}
-
-  /* Arch slider */
   .slide{gap:1.5rem;padding:1rem 0}
   .gbox{aspect-ratio:4/3}
-  .g-nav{opacity:1;pointer-events:auto}/* always show on mobile */
+  .g-nav{opacity:1;pointer-events:auto}
   .si-num{font-size:3rem}
   .si-title{font-size:1.4rem}
   .si-desc{font-size:.65rem}
   .s-ctrl{flex-direction:column;align-items:center;gap:.8rem;text-align:center}
   .s-dots{justify-content:center}
-
-  /* About */
   .about-band{padding:3.5rem 1.2rem;gap:2.5rem}
   .ab-title{font-size:clamp(1.6rem,7vw,2.4rem)}
   .ab-grid{grid-template-columns:1fr 1fr;gap:1.2rem}
   .ab-num{font-size:2.2rem}
   .ab-bio{font-size:.66rem}
-
-  /* Photo grid — 2 cols, even rows */
-  .photo-grid{
-    grid-template-columns:1fr 1fr;
-    grid-auto-rows:120px;
-    gap:2px;
-  }
-  .c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11{
-    grid-column:unset!important;grid-row:unset!important;
-  }
-  /* first photo spans full width to be a hero */
+  .photo-grid{grid-template-columns:1fr 1fr;grid-auto-rows:120px;gap:2px}
+  .c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11{grid-column:unset!important;grid-row:unset!important}
   .c1{grid-column:1/-1!important;grid-row:span 2!important}
-  .pc-ov{opacity:1;background:linear-gradient(to top,rgba(0,0,0,.7),transparent 70%)} /* always show caption */
+  .pc-ov{opacity:1;background:linear-gradient(to top,rgba(0,0,0,.7),transparent 70%)}
   .strip-item{width:min(185px,70vw)}
-
-  /* Content / platforms */
   .plat-grid{grid-template-columns:1fr 1fr;gap:1px}
   .plat{padding:1.2rem .6rem}
   .plat-num{font-size:1.4rem}
@@ -779,22 +731,15 @@ footer{
   .cc.feat{min-height:240px}
   .cc{aspect-ratio:4/3}
   .reel{aspect-ratio:4/3}
-
-  /* Contact */
   .contact{padding:3.5rem 1.2rem;gap:2.5rem}
   .contact-title{font-size:clamp(1.8rem,7vw,2.4rem)}
   .c-row{flex-direction:column;gap:.4rem;padding:.7rem 0}
   .c-label{min-width:unset}
   .cv-btn{width:100%;justify-content:center}
-
-  /* Footer */
   footer{padding:1.8rem 1.2rem;gap:.6rem}
   .f-c{display:none}
 }
 
-/* ════════════════════════════════════════
-   RESPONSIVE — SMALL MOBILE (max 390px)
-════════════════════════════════════════ */
 @media(max-width:390px){
   .h-name{font-size:clamp(2.4rem,12vw,3rem)}
   .si-title{font-size:1.2rem}
@@ -804,7 +749,6 @@ footer{
   .photo-grid{grid-auto-rows:100px}
 }
 
-/* ════════════ TAP STATES (mobile UX) ══ */
 @media(hover:none){
   .pc:active .pc-ov{opacity:1}
   .cc:active video,.cc:active img{filter:brightness(1)}
@@ -815,6 +759,7 @@ footer{
 </style>
 </head>
 <body>
+
 <!-- PRELOADER -->
 <div id="pre">
   <div class="pre-logo">
@@ -828,11 +773,11 @@ footer{
   <p class="pre-num" id="preNum">0%</p>
 </div>
 
-<!-- CURSOR (only renders on pointer:fine via CSS) -->
+<!-- CURSOR -->
 <div id="cur-dot"></div>
 <div id="cur-ring"></div>
 
-<!-- LIGHTBOX -->
+<!-- ── LIGHTBOX (single unified system) ── -->
 <div id="lb">
   <img src="" alt="" id="lb-img">
   <button id="lb-close">✕</button>
@@ -841,22 +786,17 @@ footer{
 <!-- NAV -->
 <nav id="nav">
   <a href="#" class="nav-logo">S. Ahmed</a>
-
-  <!-- Desktop tabs (hidden on mobile via CSS) -->
   <div class="nav-tabs">
     <a href="#architecture" class="nav-tab a">Architecture</a>
     <a href="#photography"  class="nav-tab p">Photography</a>
     <a href="#content"      class="nav-tab c">Content</a>
   </div>
-
   <div class="nav-right">
-    <!-- Desktop links -->
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
     <button class="mode-btn" id="modeBtn">☀</button>
-    <!-- Mobile hamburger -->
     <button class="nav-hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -907,7 +847,11 @@ footer{
       <p class="pu-sub">4K · click to upload</p>
       <input type="file" accept="image/*" onchange="setProfile(this)">
     </div>
-    <img src="WhatsApp Image 2026-03-23 at 14.18.28.jpeg" alt="Safwan Ahmed" class="profile-img" id="profileImg" onerror="this.style.display='none'">
+    <!-- FIX: profile img hidden by default; onerror also hides zone correctly -->
+    <img src="WhatsApp Image 2026-03-23 at 14.18.28.jpeg" alt="Safwan Ahmed" class="profile-img" id="profileImg"
+         style="display:none"
+         onload="this.style.display='block'; document.getElementById('puZone').style.display='none';"
+         onerror="this.style.display='none'; document.getElementById('puZone').style.display='flex';">
     <div class="h-badge">Architect · Photographer · Creator</div>
   </div>
 </section>
@@ -934,13 +878,9 @@ footer{
           <div class="g-upload" id="gu1"><span class="gu-ico">🖼</span><span class="gu-txt">Upload Images</span><input type="file" accept="image/*" multiple onchange="addImgs(this,1)"></div>
           <img src="20250428_140611.jpg" class="gi on g1" alt="" onerror="this.remove()">
           <img src="20250428_140551.jpg" class="gi g1" alt="" onerror="this.remove()">
-          <img src="public/images/p1-3.jpg" class="gi g1" alt="" onerror="this.remove()">
-          <img src="public/images/p1-4.jpg" class="gi g1" alt="" onerror="this.remove()">
-          <img src="public/images/p1-5.jpg" class="gi g1" alt="" onerror="this.remove()">
-          <img src="public/images/p1-6.jpg" class="gi g1" alt="" onerror="this.remove()">
           <div class="g-nav"><button class="garr" onclick="gNav(1,-1)">←</button><button class="garr" onclick="gNav(1,1)">→</button></div>
           <div class="gdots" id="gd1"></div>
-          <div class="gctr" id="gc1">01/06</div>
+          <div class="gctr" id="gc1">01/02</div>
         </div>
         <div class="si">
           <div class="si-num">01</div>
@@ -976,9 +916,8 @@ footer{
           <img src="Picsart_25-06-24_22-47-55-851.jpg" class="gi on g3" alt="" onerror="this.remove()">
           <img src="Picsart_25-06-24_23-15-26-065.png" class="gi g3" alt="" onerror="this.remove()">
           <img src="Picsart_25-06-24_23-17-29-558.png" class="gi g3" alt="" onerror="this.remove()">
-          <img src="public/images/p3-2.png" class="gi g3" alt="" onerror="this.remove()">
           <div class="g-nav"><button class="garr" onclick="gNav(3,-1)">←</button><button class="garr" onclick="gNav(3,1)">→</button></div>
-          <div class="gdots" id="gd3"></div><div class="gctr" id="gc3">01/04</div>
+          <div class="gdots" id="gd3"></div><div class="gctr" id="gc3">01/03</div>
         </div>
         <div class="si">
           <div class="si-num">03</div>
@@ -1017,9 +956,8 @@ footer{
           <img src="FB_IMG_1770743310432.jpg" class="gi on g5" alt="" onerror="this.remove()">
           <img src="FB_IMG_1770743315008.jpg" class="gi g5" alt="" onerror="this.remove()">
           <img src="FB_IMG_1770743317409.jpg" class="gi g5" alt="" onerror="this.remove()">
-          <img src="public/images/p5-4.jpg" class="gi g5" alt="" onerror="this.remove()">
           <div class="g-nav"><button class="garr" onclick="gNav(5,-1)">←</button><button class="garr" onclick="gNav(5,1)">→</button></div>
-          <div class="gdots" id="gd5"></div><div class="gctr" id="gc5">01/04</div>
+          <div class="gdots" id="gd5"></div><div class="gctr" id="gc5">01/03</div>
         </div>
         <div class="si">
           <div class="si-num">05</div>
@@ -1037,10 +975,8 @@ footer{
           <div class="g-upload" id="gu6"><span class="gu-ico">🖼</span><span class="gu-txt">Upload Images</span><input type="file" accept="image/*" multiple onchange="addImgs(this,6)"></div>
           <img src="FB_IMG_1770743507898.jpg" class="gi on g6" alt="" onerror="this.remove()">
           <img src="FB_IMG_1770743499610.jpg" class="gi g6" alt="" onerror="this.remove()">
-          <img src="public/images/p6-3.jpg" class="gi g6" alt="" onerror="this.remove()">
-          <img src="public/images/p6-4.jpg" class="gi g6" alt="" onerror="this.remove()">
           <div class="g-nav"><button class="garr" onclick="gNav(6,-1)">←</button><button class="garr" onclick="gNav(6,1)">→</button></div>
-          <div class="gdots" id="gd6"></div><div class="gctr" id="gc6">01/04</div>
+          <div class="gdots" id="gd6"></div><div class="gctr" id="gc6">01/02</div>
         </div>
         <div class="si">
           <div class="si-num">06</div>
@@ -1058,10 +994,8 @@ footer{
           <div class="g-upload" id="gu7"><span class="gu-ico">🖼</span><span class="gu-txt">Upload Images</span><input type="file" accept="image/*" multiple onchange="addImgs(this,7)"></div>
           <img src="FB_IMG_1770743359426.jpg" class="gi on g7" alt="" onerror="this.remove()">
           <img src="FB_IMG_1770743362148.jpg" class="gi g7" alt="" onerror="this.remove()">
-          <img src="public/images/p7-3.jpg" class="gi g7" alt="" onerror="this.remove()">
-          <img src="public/images/p7-4.jpg" class="gi g7" alt="" onerror="this.remove()">
           <div class="g-nav"><button class="garr" onclick="gNav(7,-1)">←</button><button class="garr" onclick="gNav(7,1)">→</button></div>
-          <div class="gdots" id="gd7"></div><div class="gctr" id="gc7">01/04</div>
+          <div class="gdots" id="gd7"></div><div class="gctr" id="gc7">01/02</div>
         </div>
         <div class="si">
           <div class="si-num">07</div>
@@ -1093,8 +1027,8 @@ footer{
         </div>
       </div>
 
-    </div>
-  </div>
+    </div><!-- /slider-track -->
+  </div><!-- /slider-wrap -->
 
   <div class="s-ctrl">
     <div class="s-dots" id="sDots"></div>
@@ -1104,8 +1038,8 @@ footer{
       <button class="s-arr" id="sNext"><span>→</span></button>
     </div>
   </div>
-</div>
-</div>
+</div><!-- /sec-inner -->
+</div><!-- /sec-wrap sec-arch -->
 
 <!-- ══ ABOUT ══════════════════════════════ -->
 <div class="about-band rv" id="about">
@@ -1131,6 +1065,7 @@ footer{
 <div class="divider"><div class="divider-dot" style="background:var(--teal);box-shadow:0 0 12px var(--teal)"></div></div>
 
 <!-- ══ PHOTOGRAPHY ════════════════════════ -->
+<!-- FIX: photography is now its own properly closed sec-wrap -->
 <div class="sec-wrap sec-phot" id="photography">
 <div class="sec-inner">
   <div class="sec-head">
@@ -1138,72 +1073,87 @@ footer{
       <span class="sec-label">Photography</span>
       <h2 class="sec-title">Through<br><em>the Lens</em></h2>
     </div>
-    <p class="sec-desc">Framing the world with an architect's precision. Click cells to upload photos or videos.</p>
+    <p class="sec-desc">Framing the world with an architect's precision. Click any photo to open the lightbox.</p>
   </div>
 
-<div class="photo-grid">
-
-  <div class="pc c1" onclick="openLightbox('images/photo1.jpg')">
-    <img src="Architecture.jpg">
-    <div class="pc-ov"><span class="pc-cap">Architecture</span></div>
+  <!-- FIX: photo cells use openLb(this) passing the cell element; removed stale image path args -->
+  <div class="photo-grid">
+    <div class="pc c1" onclick="openLb(this)">
+      <img src="Architecture.jpg" alt="Architecture" onerror="this.style.opacity='.15'">
+      <div class="pc-ov"><span class="pc-cap">Architecture</span></div>
+    </div>
+    <div class="pc c2" onclick="openLb(this)">
+      <img src="Urban.jpg" alt="Urban" onerror="this.style.opacity='.15'">
+      <div class="pc-ov"><span class="pc-cap">Urban</span></div>
+    </div>
+    <div class="pc c3" onclick="openLb(this)">
+      <img src="Landscape.jpg" alt="Landscape" onerror="this.style.opacity='.15'">
+      <div class="pc-ov"><span class="pc-cap">Landscape</span></div>
+    </div>
+    <div class="pc c4" onclick="openLb(this)">
+      <img src="Detail.jpg" alt="Detail" onerror="this.style.opacity='.15'">
+      <div class="pc-ov"><span class="pc-cap">Detail</span></div>
+    </div>
+    <div class="pc c5" onclick="openLb(this)">
+      <img src="Potrait.jpg" alt="Portrait" onerror="this.style.opacity='.15'">
+      <div class="pc-ov"><span class="pc-cap">Portrait</span></div>
+    </div>
+    <div class="pc c6" onclick="openLb(this)">
+      <img src="Street.jpg" alt="Street" onerror="this.style.opacity='.15'">
+      <div class="pc-ov"><span class="pc-cap">Street</span></div>
+    </div>
+    <div class="pc c7" onclick="openLb(this)">
+      <img src="City.jpg" alt="City" onerror="this.style.opacity='.15'">
+      <div class="pc-ov"><span class="pc-cap">City</span></div>
+    </div>
+    <div class="pc c8" onclick="openLb(this)">
+      <img src="Texture.jpg" alt="Texture" onerror="this.style.opacity='.15'">
+      <div class="pc-ov"><span class="pc-cap">Texture</span></div>
+    </div>
+    <div class="pc c9" onclick="openLb(this)">
+      <img src="Nature.jpg" alt="Nature" onerror="this.style.opacity='.15'">
+      <div class="pc-ov"><span class="pc-cap">Nature</span></div>
+    </div>
+    <div class="pc c10" onclick="openLb(this)">
+      <img src="Abstract.jpg" alt="Abstract" onerror="this.style.opacity='.15'">
+      <div class="pc-ov"><span class="pc-cap">Abstract</span></div>
+    </div>
+    <div class="pc c11" onclick="openLb(this)">
+      <img src="Architecture.jpg" alt="Architecture II" onerror="this.style.opacity='.15'">
+      <div class="pc-ov"><span class="pc-cap">Architecture II</span></div>
+    </div>
   </div>
 
-  <div class="pc c2" onclick="openLightbox('images/photo2.jpg')">
-    <img src="Urban.jpg">
-    <div class="pc-ov"><span class="pc-cap">Urban</span></div>
+  <!-- FIX: strip HTML restored with correct id="photoStrip" -->
+  <p class="strip-head">Scroll for more</p>
+  <div class="strip" id="photoStrip">
+    <div class="strip-item" onclick="openLb(this)">
+      <div class="s-up"><span>＋</span><input type="file" accept="image/*,video/*" onchange="setStrip(this)"></div>
+    </div>
+    <div class="strip-item" onclick="openLb(this)">
+      <div class="s-up"><span>＋</span><input type="file" accept="image/*,video/*" onchange="setStrip(this)"></div>
+    </div>
+    <div class="strip-item" onclick="openLb(this)">
+      <div class="s-up"><span>＋</span><input type="file" accept="image/*,video/*" onchange="setStrip(this)"></div>
+    </div>
+    <div class="strip-item" onclick="openLb(this)">
+      <div class="s-up"><span>＋</span><input type="file" accept="image/*,video/*" onchange="setStrip(this)"></div>
+    </div>
+    <div class="strip-item" onclick="openLb(this)">
+      <div class="s-up"><span>＋</span><input type="file" accept="image/*,video/*" onchange="setStrip(this)"></div>
+    </div>
+    <div class="strip-item" onclick="openLb(this)">
+      <div class="s-up"><span>＋</span><input type="file" accept="image/*,video/*" onchange="setStrip(this)"></div>
+    </div>
   </div>
 
-  <div class="pc c3" onclick="openLightbox('images/photo3.jpg')">
-    <img src="Landscape.jpg">
-    <div class="pc-ov"><span class="pc-cap">Landscape</span></div>
-  </div>
-   <div class="pc c4" onclick="openLightbox('images/photo4.jpg')">
-    <img src="Detail.jpg">
-    <div class="pc-ov"><span class="pc-cap">Detail</span></div>
-  </div>
+</div><!-- /sec-inner -->
+</div><!-- /sec-wrap sec-phot  ← FIX: this closing tag was missing, causing content creator to nest inside photography -->
 
-  <div class="pc c5" onclick="openLightbox('images/photo5.jpg')">
-    <img src="Potrait.jpg">
-    <div class="pc-ov"><span class="pc-cap">Portrait</span></div>
-  </div>
-
-  <div class="pc c6" onclick="openLightbox('images/photo6.jpg')">
-    <img src="Street.jpg">
-    <div class="pc-ov"><span class="pc-cap">Street</span></div>
-  </div>
-   <div class="pc c7" onclick="openLightbox('images/photo7.jpg')">
-    <img src="City.jpg">
-    <div class="pc-ov"><span class="pc-cap">City</span></div>
-  </div>
-
-  <div class="pc c8" onclick="openLightbox('images/photo8.jpg')">
-    <img src="Texture.jpg">
-    <div class="pc-ov"><span class="pc-cap">Texture</span></div>
-  </div>
-
-  <div class="pc c9" onclick="openLightbox('images/photo9.jpg')">
-    <img src="Nature.jpg">
-    <div class="pc-ov"><span class="pc-cap">Nature</span></div>
-  </div>
-<div class="pc c10" onclick="openLightbox('images/photo10.jpg')">
-    <img src="Abstract.jpg">
-    <div class="pc-ov"><span class="pc-cap">Abstract</span></div>
-  </div>
-   <div class="pc c11" onclick="openLightbox('images/photo11.jpg')">
-    <img src="Architecture.jpg">
-    <div class="pc-ov"><span class="pc-cap">Architecture</span></div>
-  </div>
-
-</div>
-
-<!-- Lightbox -->
-<div id="lightbox" onclick="closeLightbox()">
-  <img id="lightbox-img">
-</div>
-   
 <div class="divider"><div class="divider-dot" style="background:var(--rose);box-shadow:0 0 12px var(--rose)"></div></div>
 
 <!-- ══ CONTENT CREATOR ════════════════════ -->
+<!-- FIX: content creator is now its own properly closed sec-wrap, not nested inside photography -->
 <div class="sec-wrap sec-cont" id="content">
 <div class="sec-inner">
   <div class="sec-head">
@@ -1240,6 +1190,7 @@ footer{
   </div>
 
   <div class="reel rv d2">
+    <!-- FIX: reel-zone uses .gone class consistently instead of style.display -->
     <div class="reel-zone" id="reelZone">
       <div class="reel-btn">▶</div>
       <p class="reel-lbl">Showreel 2024 — Upload Video</p>
@@ -1247,8 +1198,8 @@ footer{
     </div>
     <video id="reelVid" class="reel-vid" controls></video>
   </div>
-</div>
-</div>
+</div><!-- /sec-inner -->
+</div><!-- /sec-wrap sec-cont -->
 
 <!-- ══ CONTACT ════════════════════════════ -->
 <section class="contact" id="contact">
@@ -1291,7 +1242,7 @@ var pt=setInterval(function(){
   preNum.textContent=Math.floor(v)+'%';
 },65);
 
-/* ── CURSOR (pointer devices only) ── */
+/* ── CURSOR ── */
 var dot=document.getElementById('cur-dot');
 var ring=document.getElementById('cur-ring');
 if(window.matchMedia('(pointer:fine)').matches){
@@ -1373,15 +1324,14 @@ window.addEventListener('scroll',function(){
 },{passive:true});
 
 /* ── PROFILE PHOTO ── */
-var pImg=document.getElementById('profileImg');
-var pZone=document.getElementById('puZone');
-if(pImg){
-  if(pImg.complete&&pImg.naturalWidth>0)pZone.style.display='none';
-  pImg.addEventListener('load',function(){if(pImg.naturalWidth>0)pZone.style.display='none';});
-}
+// FIX: profile img now starts hidden and reveals itself via onload/onerror inline handlers
 window.setProfile=function(inp){
   var f=inp.files[0];if(!f)return;
-  pImg.src=URL.createObjectURL(f);pImg.style.display='block';pZone.style.display='none';
+  var pImg=document.getElementById('profileImg');
+  var pZone=document.getElementById('puZone');
+  pImg.src=URL.createObjectURL(f);
+  pImg.style.display='block';
+  pZone.style.display='none';
 };
 
 /* ── GALLERY SYSTEM ── */
@@ -1469,7 +1419,6 @@ document.addEventListener('keydown',function(e){
   if(e.key==='ArrowRight')goTo(cs+1);
   if(e.key==='ArrowLeft')goTo(cs-1);
 });
-/* touch swipe */
 var tx=0,ty=0;
 track.addEventListener('touchstart',function(e){tx=e.touches[0].clientX;ty=e.touches[0].clientY;},{passive:true});
 track.addEventListener('touchend',function(e){
@@ -1508,17 +1457,27 @@ var ro=new IntersectionObserver(function(entries){
 },{threshold:.04});
 document.querySelectorAll('.rv').forEach(function(el){ro.observe(el);});
 
-/* ── LIGHTBOX ── */
+/* ── LIGHTBOX (unified, fixed) ── */
+// FIX: single openLb() function that reads the actual img src from the cell
 var lb=document.getElementById('lb');
 var lbImg=document.getElementById('lb-img');
 window.openLb=function(cell){
-  var img=cell.querySelector('img:not(.p-upload img):not(.s-up img)');
-  if(!img||!img.src||img.src===window.location.href||img.src.endsWith('#'))return;
-  lbImg.src=img.src;lb.classList.add('open');document.body.style.overflow='hidden';
+  // find first real image (skip upload placeholders with no natural src)
+  var img=cell.querySelector('img');
+  if(!img||!img.src||img.naturalWidth===0)return;
+  lbImg.src=img.src;
+  lb.classList.add('open');
+  document.body.style.overflow='hidden';
 };
-document.getElementById('lb-close').addEventListener('click',function(){lb.classList.remove('open');document.body.style.overflow='';});
-lb.addEventListener('click',function(e){if(e.target===lb){lb.classList.remove('open');document.body.style.overflow='';}});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'){lb.classList.remove('open');document.body.style.overflow='';}});
+document.getElementById('lb-close').addEventListener('click',function(){
+  lb.classList.remove('open');document.body.style.overflow='';
+});
+lb.addEventListener('click',function(e){
+  if(e.target===lb){lb.classList.remove('open');document.body.style.overflow='';}
+});
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){lb.classList.remove('open');document.body.style.overflow='';}
+});
 
 /* ── PHOTO CELL UPLOAD ── */
 window.setCell=function(inp,ev){
@@ -1554,8 +1513,9 @@ window.setCard=function(inp,vidId,zoneId){
   var zone=document.getElementById(zoneId);var vid=document.getElementById(vidId);
   var card=inp.closest('.cc');var isV=f.type.startsWith('video/');
   if(zone)zone.classList.add('gone');
-  if(isV){if(vid){vid.src=url;vid.style.display='block';vid.play();}}
-  else{
+  if(isV){
+    if(vid){vid.src=url;vid.style.display='block';vid.play();}
+  } else {
     var img=document.createElement('img');img.src=url;
     img.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:cover;';
     if(card)card.insertBefore(img,card.querySelector('.cc-info'));
@@ -1564,20 +1524,25 @@ window.setCard=function(inp,vidId,zoneId){
 };
 
 /* ── REEL ── */
+// FIX: use .gone class consistently (matching CSS) instead of style.display='none'
 window.setReel=function(inp){
   var f=inp.files[0];if(!f)return;
   var url=URL.createObjectURL(f);
-  var vid=document.getElementById('reelVid');var zone=document.getElementById('reelZone');
-  vid.src=url;vid.classList.add('active');if(zone)zone.style.display='none';
+  var vid=document.getElementById('reelVid');
+  var zone=document.getElementById('reelZone');
+  vid.src=url;vid.classList.add('active');
+  if(zone)zone.classList.add('gone');
 };
 
-/* ── STRIP DRAG ── */
-var strip=document.getElementById('strip');
-var isDown=false,sx=0,sl=0;
-strip.addEventListener('mousedown',function(e){isDown=true;sx=e.pageX-strip.offsetLeft;sl=strip.scrollLeft;strip.style.userSelect='none';});
-strip.addEventListener('mouseleave',function(){isDown=false;});
-strip.addEventListener('mouseup',function(){isDown=false;strip.style.userSelect='';});
-strip.addEventListener('mousemove',function(e){if(!isDown)return;e.preventDefault();strip.scrollLeft=sl-(e.pageX-strip.offsetLeft-sx)*1.2;});
+/* ── STRIP DRAG (fixed: correct id photoStrip) ── */
+var stripEl=document.getElementById('photoStrip');
+if(stripEl){
+  var isDown=false,sx=0,sl=0;
+  stripEl.addEventListener('mousedown',function(e){isDown=true;sx=e.pageX-stripEl.offsetLeft;sl=stripEl.scrollLeft;stripEl.style.userSelect='none';});
+  stripEl.addEventListener('mouseleave',function(){isDown=false;});
+  stripEl.addEventListener('mouseup',function(){isDown=false;stripEl.style.userSelect='';});
+  stripEl.addEventListener('mousemove',function(e){if(!isDown)return;e.preventDefault();stripEl.scrollLeft=sl-(e.pageX-stripEl.offsetLeft-sx)*1.2;});
+}
 
 /* ── HERO PARALLAX (desktop only) ── */
 if(window.matchMedia('(pointer:fine)').matches){
