@@ -1164,48 +1164,87 @@ footer{
     <p class="sec-desc">Bridging architecture with culture. Upload videos &amp; thumbnails in 4K.</p>
   </div>
 
-  <div class="plat-grid rv">
-    <div class="plat"><div class="plat-icon">▶</div><div class="plat-name">YouTube</div><div class="plat-num">—</div><div class="plat-unit">subscribers</div></div>
-    <div class="plat"><div class="plat-icon">◈</div><div class="plat-name">Instagram</div><div class="plat-num">—</div><div class="plat-unit">followers</div></div>
-    <div class="plat"><div class="plat-icon">♦</div><div class="plat-name">TikTok</div><div class="plat-num">—</div><div class="plat-unit">followers</div></div>
-    <div class="plat"><div class="plat-icon">✦</div><div class="plat-name">LinkedIn</div><div class="plat-num">—</div><div class="plat-unit">connections</div></div>
+ 
+
+<div class="cc-grid rv d1">
+
+  <!-- FEATURED -->
+  <div class="cc feat" onmouseenter="playVid('cv1')" onmouseleave="pauseVid('cv1')">
+    
+    <video id="cv1" 
+      poster="thumb1.jpg"
+      muted loop playsinline
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      <source src="https://github.com/bLACKtERMINAL737/safwan-portfolio/releases/download/5th_video/6th.mp4" type="video/mp4">
+    </video>
+
+    <div class="cc-info">
+      <span class="cc-type">Featured · Architecture Film</span>
+      <h3 class="cc-title">A Day in the<br><em>Design Studio</em></h3>
+    </div>
+
   </div>
 
-  <div class="cc-grid rv d1">
-    <div class="cc feat">
-      <div class="cc-zone" id="cz1"><span class="cz-ico">🎬</span><span class="cz-txt">Featured · 4K Video or Image</span><input type="file" accept="image/*,video/*" onchange="setCard(this,'cv1','cz1')"></div>
-      <video id="cv1" style="display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover" muted loop playsinline></video>
-      <div class="cc-info"><span class="cc-type">Featured · Architecture Film</span><h3 class="cc-title">A Day in the<br><em>Design Studio</em></h3><span class="cc-meta">Upload to activate</span></div>
+  <!-- CARD 2 -->
+  <div class="cc" onmouseenter="playVid('cv2')" onmouseleave="pauseVid('cv2')">
+
+    <video id="cv2" 
+      poster="thumb2.jpg"
+      muted loop playsinline
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      <source src="https://github.com/bLACKtERMINAL737/safwan-portfolio/releases/download/2nd_video/2nd.mp4" type="video/mp4">
+    </video>
+
+    <div class="cc-info">
+      <span class="cc-type">Reel · Model Making</span>
+      <h3 class="cc-title"><em>Process</em> Behind the Build</h3>
     </div>
-    <div class="cc">
-      <div class="cc-zone" id="cz2"><span class="cz-ico">📱</span><span class="cz-txt">Video / Image 2</span><input type="file" accept="image/*,video/*" onchange="setCard(this,'cv2','cz2')"></div>
-      <video id="cv2" style="display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover" muted loop playsinline></video>
-      <div class="cc-info"><span class="cc-type">Reel · Model Making</span><h3 class="cc-title"><em>Process</em> Behind the Build</h3><span class="cc-meta">Reel · 60 sec</span></div>
-    </div>
-    <div class="cc">
-      <div class="cc-zone" id="cz3"><span class="cz-ico">📱</span><span class="cz-txt">Video / Image 3</span><input type="file" accept="image/*,video/*" onchange="setCard(this,'cv3','cz3')"></div>
-      <video id="cv3" style="display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover" muted loop playsinline></video>
-      <div class="cc-info"><span class="cc-type">Video Essay</span><h3 class="cc-title">Why <em>Vernacular</em> Matters</h3><span class="cc-meta">Essay · 8 min</span></div>
-    </div>
+
   </div>
 
-  <div class="reel rv d2">
-    <!-- FIX: reel-zone uses .gone class consistently instead of style.display -->
-    <div class="reel-zone" id="reelZone">
-      <div class="reel-btn">▶</div>
-      <p class="reel-lbl">Showreel 2024 — Upload Video</p>
-      <input type="file" accept="video/*" onchange="setReel(this)">
+  <!-- CARD 3 -->
+  <div class="cc" onmouseenter="playVid('cv3')" onmouseleave="pauseVid('cv3')">
+
+    <video id="cv3" 
+      poster="thumb3.jpg"
+      muted loop playsinline
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      <source src="https://github.com/bLACKtERMINAL737/safwan-portfolio/releases/download/3rd_video/3rd.mp4" type="video/mp4">
+    </video>
+
+    <div class="cc-info">
+      <span class="cc-type">Video Essay</span>
+      <h3 class="cc-title">Why <em>Vernacular</em> Matters</h3>
     </div>
-    <video id="reelVid" class="reel-vid" controls></video>
+
   </div>
-</div><!-- /sec-inner -->
+
+</div>
+
+   <div class="cc" onmouseenter="playVid('cv3')" onmouseleave="pauseVid('cv3')">
+
+    <video id="cv3" 
+      poster="thumb3.jpg"
+      muted loop playsinline
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      <source src="https://github.com/bLACKtERMINAL737/safwan-portfolio/releases/download/4th_video/5th.mp4" type="video/mp4">
+    </video>
+
+    <div class="cc-info">
+      <span class="cc-type">Video Essay</span>
+      <h3 class="cc-title">Why <em>Vernacular</em> Matters</h3>
+    </div>
+
+  </div>
+
+</div>
 </div><!-- /sec-wrap sec-cont -->
 
 <!-- ══ CONTACT ════════════════════════════ -->
 <section class="contact" id="contact">
   <div class="rv">
     <h2 class="contact-title">Let's build<br>something<br><em>meaningful.</em></h2>
-    <div class="c-row"><span class="c-label">Email</span><span class="c-value"><a href="mailto:safwan.ahmed@example.com">safwan.ahmed@example.com</a></span></div>
+    <div class="c-row"><span class="c-label">Email</span><span class="c-value"><a href="mailto:251-42-018@diu.edu.bd">251-42-018@diu.edu.bd</a></span></div>
     <div class="c-row"><span class="c-label">ID</span><span class="c-value">251-42-018</span></div>
     <div class="c-row"><span class="c-label">University</span><span class="c-value">B.Arch — Dept. of Architecture<br>Daffodil International University</span></div>
     <div class="c-row"><span class="c-label">Location</span><span class="c-value">Dhaka, Bangladesh</span></div>
@@ -1213,7 +1252,7 @@ footer{
   </div>
   <div class="contact-right rv d2">
     <p>Currently open to internship opportunities, collaborative academic projects, architecture competitions and content creation partnerships.</p>
-    <a href="#" class="cv-btn">
+    <a href="Image_20260327010235_111_5.jpg" class="cv-btn">
       <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M7 1v9M3.5 7L7 10.5 10.5 7M2 13h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <span>Download CV — PDF</span>
     </a>
@@ -1221,7 +1260,7 @@ footer{
 </section>
 
 <footer>
-  <p class="f-l">© 2025 Safwan Ahmed</p>
+  <p class="f-l">© 2026 Safwan Ahmed</p>
   <span class="f-c">Architecture · Photography · Content</span>
   <p class="f-r">by <a href="https://abdullahalmahim.xyz/" target="_blank">Abdullah Al Mahim</a></p>
 </footer>
